@@ -1,17 +1,8 @@
 # **Traffic Sign Recognition**
 
-The goal for this project was to build a traffic sign classifier by training a convolutional nerual network to identify  German traffic signs from the supplied data set.
+The goal for this project was to build a traffic sign classifier by training a convolutional neural network to identify  German traffic signs from the supplied data set.
 
 The project Jupyter notebook can be found on [GitHub](https://github.com/gavincoelho/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb).
-
-The report consists of the following topics:
-
-* [Loading and Exploring The Dataset](#loading-and-exploring-the-dataset)
-* [Designing, Training & Testing the Model Architecture](#designing,-training-&-esting-the-model-architecture)
-* [Testing the Model with New Images](#testing-the-model-with-new-images)
-* [Analyzing the Softmax Probabilities](#analyzing-the-softmax-probabilities)
-* [Summary](#summary)
-
 
 [//]: # (Image References)
 
@@ -20,14 +11,11 @@ The report consists of the following topics:
 [image3]: ./images/image3.png "Initial and Normalised Image"
 [image4]: ./images/image4.png "Accuracy and Loss Plot"
 [image5]: ./images/image5.png "Traffic Sign 2"
-[image6]: ./images/image6.png "Traffic Sign 3"
-[image7]: ./images/image7.png "Traffic Sign 4"
-[image8]: ./images/image8.png "Traffic Sign 5"
 
 ## Loading and Exploring The Dataset
 
 ### Loading the Data
-Three seperate data files containing training, validation and test datasets were loaded and unpickled. The image data and labels were then extracted for each set. 
+Three separate data files containing training, validation and test datasets were loaded and un-pickled. The image data and labels were then extracted for each set. 
 
 Next the data was analysed to determine the number of samples in each set, the image shape, the number of channels in each image and the total number of classes.
 
@@ -122,7 +110,7 @@ My final model consisted of the following layers:
 | Fully Connected		| outputs 10									|
 
 ### Parameters
-The following parameters where adjusted until an acceptable accuracy was achieved. The learning rate was initialy set at 0.005 but after 10 Epochs it was decreased by 20% each Epoch. 
+The following parameters where adjusted until an acceptable accuracy was achieved. The learning rate was initially set at 0.005 but after 10 Epochs it was decreased by 20% each Epoch. 
 
 |	Parameter         	|	Value			        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -175,4 +163,4 @@ Finally the top five softmax probabilities were printed.
 
 ## Summary
 
-A convoluted neural network was created using a LeNet architecture to successfully classify German traffic signs.
+A convoluted neural network was created using a LeNet architecture to successfully classify German traffic signs. To improve the model and reduce overfitting the data could be augmented to increase the number of training samples.
